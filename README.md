@@ -13,6 +13,7 @@
   - [Cabin_Destination_데이터전처리.ipynb](https://github.com/jsh1021902/CUAI_BASIC/blob/main/%EA%B3%B5%EB%AA%A8%EC%A0%84/%EC%B5%9C%EC%A2%85%20%EC%A0%84%EC%B2%98%EB%A6%AC/Cabin_Destination_%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%A0%84%EC%B2%98%EB%A6%AC.ipynb)
   - [train_test cabin_destination 결측치 처리.ipynb](https://github.com/jsh1021902/CUAI_BASIC/blob/main/%EA%B3%B5%EB%AA%A8%EC%A0%84/%EC%B5%9C%EC%A2%85%20%EC%A0%84%EC%B2%98%EB%A6%AC/train_test%20cabin_destination%20%EA%B2%B0%EC%B8%A1%EC%B9%98%20%EC%B2%98%EB%A6%AC.ipynb)
   - [결측치 처리 합병.ipynb](https://github.com/jsh1021902/CUAI_BASIC/blob/main/%EA%B3%B5%EB%AA%A8%EC%A0%84/%EC%B5%9C%EC%A2%85%20%EC%A0%84%EC%B2%98%EB%A6%AC/%EA%B2%B0%EC%B8%A1%EC%B9%98%20%EC%B2%98%EB%A6%AC%20%ED%95%A9%EB%B3%91.ipynb)
+    
 - `Model Training and Tuning / Prediction and Submission`
   - LightGBM, SVC(Support Vector Classifier), XGBoost 및 RandomForest를 포함한 여러 기계 학습 모델을 훈련하고 조정했습니다.
   - pycaret을 사용하여 다양한 하이퍼파라미터를 탐색했습니다. 모델의 정확성을 평가하고 최종 예측을 위해 가장 성능이 좋은 모델을 선택했습니다.
