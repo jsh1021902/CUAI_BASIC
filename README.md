@@ -27,40 +27,71 @@
 
 
 ### 데이터셋 출처
-- chatbot 데이터 출처는 아래 데이터를 사용했습니다
+- 데이터 출처는 아래 데이터를 사용했습니다
   ```text
-  Youngsook Song.(2018). Chatbot_data_for_Korean v1.0)[Online].
-  Available : https://github.com/songys/Chatbot_data (downloaded 2022. June. 29.)
+  Spaceship Titanic-Predict which passengers are transported to an alternate dimension
+  (https://www.kaggle.com/competitions/spaceship-titanic)
   ```
 <br>
 
-## 사용 용도
-- [korean-chatbot-Transformer.ipynb](korean-chatbot-Transformer.ipynb)
-  - Transformer에 대한 자세한 구조를 코드를 통해 확인해보고 싶다면 이 코드를 통해 학습할 수 있습니다
-  - 또한, 이 파일에는 custom model을 저장하는 코드가 추가되어 있습니다
-  - learning rate, model 구조를 customize 했을 때 어떻게 모델을 저장하고 불러오는지 참고하기 좋을 것 같습니다
-- [korean-chatbot-GPT.ipynb](korean-chatbot-GPT.ipynb)
-  - 위 transformer notebook을 보고 GPT를 이해하고 싶다면 이 파일을 통해 쉽게 이해할 수 있을 것입니다
+----
 
+## 사용 기술
+
+### Environment
+![Jupyter](https://img.shields.io/badge/Jupyter-F37626.svg?&style=for-the-badge&logo=Jupyter&logoColor=white)
+![Github](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=GitHub&logoColor=white)
+
+### Development
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![keras](https://img.shields.io/badge/Keras-D00000?style=for-the-badge&logo=Keras&logoColor=white)
+![Tensorflow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-2C2D72?style=for-the-badge&logo=pandas&logoColor=white)
+![Numpy](https://img.shields.io/badge/Numpy-777BB4?style=for-the-badge&logo=numpy&logoColor=white)
+![scikit](https://img.shields.io/badge/scikit_learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
+<br>
+----
+
+회고 및 결론
+---
+### 회고
+<details>
+  <summary><b>구현 회고</b></summary>
+  <div markdown="1">
+    <li> 배운 점 </li>
+      <ul>
+        <li>모델링 과정에서 전처리가 수행하는 중요한 역할에 대해 더 깊이 이해하게 되었습니다.</li>
+        <li>각 모델을 수동으로 구축하고 테스트할 필요 없이 PyCaret과 같은 AutoML 도구를 활용하여 효과적으로 모델을 선택하는 방법을 배웠습니다.</li>
+      </ul>
+    <li> 느낀 점 </li>
+      <ul>
+        <li>복잡한 개념이라도 노력을 기울이면 이해할 수 있다는 것을 깨달았습니다.</li>
+        <li>학습률과 같은 하이퍼 파라미터의 조정에 따라 모델 성능이 크게 달라질 수 있음을 관찰했습니다.</li>
+      </ul>
+  </div>
+</details>
+
+### 결론
+- 전처리 및 모델 선택에 대한 경험은 모델 성능에 영향을 미치는 요소를 이해하는 데 매우 중요했습니다.
 <br>
 
-# CUAI_BASIC
-- CUAI_Basic 스터디 1조
-- 채용공고 텍스트 마이닝과 생성형AI를 통한 취업 인사이트 도출 및 제공 
-
-## ✍ 요약
-- SBERT와 비지도학습을 기반으로 채용공고의 문장단위 분석을 진행하였다.
-- KeyBERT, BERTopic을 활용한 군집해석을 통해 인사이트를 도출하였다.
-- Django Framework와 생성형 AI를 통해 분석 결과의 활용성을 높혔다. 이를 통해 취업준비생에게 실질적인 도움을 줄 것으로 기대한다.
-- 서비스 시현 영상은 <a href="https://youtu.be/UoOJSfqcg98?si=edA7vfTpR70IqVL4"> <img src="https://img.shields.io/badge/-video-8AC926?style=for-the-badge" height="20px" style="margin-bottom: -5px" /> </a>이곳을 통해 확인 하실 수 있습니다!
-
-##
-<img src="https://github.com/tgwon/Recruitment_Text_Mining/assets/102985590/0d82da35-9e6e-44b3-87ef-27937bcb28b8"  width="760" height="430">
-
-##
-<a href="https://youtu.be/UoOJSfqcg98?si=edA7vfTpR70IqVL4">
-  <img src="https://github.com/tgwon/Recruitment_Text_Mining/assets/102985590/8f9e24ab-ebdb-41da-a64c-19e4f3c8153d"  width="830" height="700">
-</a>
-
-## 🏆 최종결과
-- 제 4회 응용통계학과 분석 공모전 최우수상
+---
+## 디렉토리 구조
+```bash
+CUAI_BASIC/
+├── README.md
+└── 공모전/
+    ├── 1차 전처리/
+    ├── 2차 전처리/
+    ├── 최종 전처리/
+    │   ├── Cabin_Destination_데이터전처리.ipynb
+    │   ├── train_test cabin_destination 결측치 처리.ipynb
+    │   ├── 결측치 처리 합병.ipynb
+    │   ├── LightGBM 모델.ipynb
+    │   ├── SVC_0.80313.ipynb
+    │   ├── Spaceship_Titanic_XGBoost_최종.ipynb
+    │   ├── SVC_0.80313.ipynb
+    │   ├── space_titanic_랜덤포레스트.ipynb
+    │   └── Spaceship_Titanic_Pycaret.ipynb
+    └── submission.csv
+```
