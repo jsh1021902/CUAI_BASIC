@@ -4,6 +4,7 @@
 > **CUAI_Basic 스터디 1조** <br/> 
 > **프로젝트 기간: 2023.03.14 ~ 2023.05.22** <br/>
 <br>
+
 ## 프로젝트 소개
 - 캐글의 Spaceship Titanic 데이터를 바탕으로 어떤 승객들이 다른 차원으로 이동되었는지 예측해보는 프로젝트틀 진행했습니다.
 - `Data Preprocessing / Feature Engineering`
